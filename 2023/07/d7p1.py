@@ -15,7 +15,7 @@ def handStrength(hand):
 		case 4:
 			hand.append(5)
 		case 3:
-			if cardCount[1] == 1:
+			if cardCount[1] == 2:
 				hand.append(4)
 			else:
 				hand.append(3)
@@ -79,5 +79,4 @@ handSort(hands)
 
 for i in range(len(hands)):
 	totalBet += ((i + 1) * hands[i][1])
-	print(hands[i][0], hands[i][2], i, hands[i][1], totalBet)
 print(totalBet)
